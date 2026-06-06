@@ -67,3 +67,5 @@ RUN --mount=type=secret,id=HF_TOKEN,required=false \
 
 # Start the handler
 CMD ["/bin/bash", "/src/start.sh"]
+
+RUN pip install --no-deps --upgrade "transformers>=5.5.0"
